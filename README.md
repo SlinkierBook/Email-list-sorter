@@ -48,14 +48,14 @@ How to use
 3. When prompted, enter the path to your email file:
 
    ```
-   Caminho do arquivo de emails: emails.txt
+   Path to the email file: emails.txt
    ```
 
 4. Optionally, choose to use a custom disposable-domain list instead of the built-in default:
 
    ```
-   Usar lista customizada de domínios descartáveis? (s/n): s
-   Caminho do arquivo de domínios: meus_dominios.txt
+   Use a custom list of disposable domains? (y/n): y
+   Path to the domains file: dominios_teste.txt
    ```
 
    The custom domains file should be a plain `.txt` file with one domain per line (e.g. `mailinator.com`).
