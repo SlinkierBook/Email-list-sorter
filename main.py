@@ -29,6 +29,7 @@ def main(folder, custom_domains_path=None):
     print(f"Unique: {len(unique)} | Duplicates removed: {sum(duplicate_count.values())}")
     print(f"Approved: {len(approved)} | Suspicious: {len(suspicious)}")
     print(f"Clean: {len(clean)} | Disposable: {len(disposable)}")
+    
 if __name__ == "__main__":
     path = input("Path to the email file: ")
     
