@@ -9,7 +9,7 @@ def main(folder, custom_domains_path=None):
     data = validate_file(path)
 
     valid, invalid = validate_email(data)
-    unique, duplicates_items, duplicate_count = remove_duplicates(valid)
+    unique, _, duplicate_count = remove_duplicates(valid)
     approved, suspicious = assess_risk(unique)
 
     if custom_domains_path:
@@ -29,7 +29,7 @@ def main(folder, custom_domains_path=None):
     print(f"Unique: {len(unique)} | Duplicates removed: {sum(duplicate_count.values())}")
     print(f"Approved: {len(approved)} | Suspicious: {len(suspicious)}")
     print(f"Clean: {len(clean)} | Disposable: {len(disposable)}")
-    
+
 if __name__ == "__main__":
     path = input("Path to the email file: ")
     
